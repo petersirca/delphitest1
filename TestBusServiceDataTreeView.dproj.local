@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/07/20 09:53:38.000.228,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/15 20:23:31.007,=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/15 20:24:35.386,C:\Users\dell\Documents\Embarcadero\Studio\Projects\TestBusServiceData.pas=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/15 20:25:10.386,F:\dev\SysTra\TestBusServiceData.pas=C:\Users\dell\Documents\Embarcadero\Studio\Projects\TestBusServiceData.pas</Transaction>
+    <Transaction>2022/01/15 20:26:15.481,F:\dev\SysTra\TestBusServiceDataTreeView.dproj=C:\Users\dell\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FD231FB8-635E-4650-A2AC-725AF24AA35D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BusServiceDataTreeView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TestBusServiceDataTreeView.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BusServiceDataTreeView">
+        <MSBuild Projects="BusServiceDataTreeView.dproj"/>
+    </Target>
+    <Target Name="BusServiceDataTreeView:Clean">
+        <MSBuild Projects="BusServiceDataTreeView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BusServiceDataTreeView:Make">
+        <MSBuild Projects="BusServiceDataTreeView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestBusServiceDataTreeView">
+        <MSBuild Projects="TestBusServiceDataTreeView.dproj"/>
+    </Target>
+    <Target Name="TestBusServiceDataTreeView:Clean">
+        <MSBuild Projects="TestBusServiceDataTreeView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestBusServiceDataTreeView:Make">
+        <MSBuild Projects="TestBusServiceDataTreeView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BusServiceDataTreeView;TestBusServiceDataTreeView"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BusServiceDataTreeView:Clean;TestBusServiceDataTreeView:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BusServiceDataTreeView:Make;TestBusServiceDataTreeView:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
